@@ -1,0 +1,29 @@
+NAME=/mnt/nas_home/fs-xlt/experiments/translate-multinli;
+SCRIPT=translate_multinli.sh;
+SRC_DIR=/mnt/nas_home/aja63/projects/fs-xlt/few-shot;
+CONDA_ENV=fs-xlt;
+CONDA_REPLACE=fsxlt;
+
+SOURCE_LANG_FLORES_CODE? = eng;
+SOURCE_SCRIPT? = Latn;
+
+TRANSLATION_ROOT? = /mnt/nas_home/fs-xlt/experiments/nllb_adapt_full/nllb3.3B_epochs-5_5_multinli_translations;
+
+TRANSLATION_MODEL (), TARGET_LANG (), TARGET_LANG_FLORES_CODE?, TARGET_SCRIPT?, LANGUAGE_ADAPTER? =
+    #aym, ayr, Latn, no |
+    #gn, grn, Latn, no |
+    #quy, quy, Latn, no |
+    /mnt/nas_home/fs-xlt/experiments/nllb_adapt_full/nllb3.3B_bzd_epochs-5_5 (nllb3.3Bfull), bzd, bzd, Latn, yes |
+    /mnt/nas_home/fs-xlt/experiments/nllb_adapt_full/nllb3.3B_cni_epochs-5_5 (nllb3.3Bfull), cni, cni, Latn, yes |
+    /mnt/nas_home/fs-xlt/experiments/nllb_adapt_full/nllb3.3B_hch_epochs-5_5 (nllb3.3Bfull), hch, hch, Latn, yes |
+    /mnt/nas_home/fs-xlt/experiments/nllb_adapt_full/nllb3.3B_nah_epochs-5_5 (nllb3.3Bfull), nah, nah, Latn, yes |
+    /mnt/nas_home/fs-xlt/experiments/nllb_adapt_full/nllb3.3B_oto_epochs-5_5 (nllb3.3Bfull), oto, oto, Latn, yes |
+    /mnt/nas_home/fs-xlt/experiments/nllb_adapt_full/nllb3.3B_shp_epochs-5_5 (nllb3.3Bfull), shp, shp, Latn, yes |
+    /mnt/nas_home/fs-xlt/experiments/nllb_adapt_full/nllb3.3B_tar_epochs-5_5 (nllb3.3Bfull), tar, tar, Latn, yes
+;
+
+INPUT_SPLIT?, OUTPUT_SPLIT () =
+    train, train |
+    validation_matched, validation #|
+    #test, test
+;

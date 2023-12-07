@@ -1,0 +1,33 @@
+NAME=/mnt/nas_home/fs-xlt/experiments/nllb_adapt_embinit;
+SCRIPT=nllb_adapt.sh;
+SRC_DIR=/mnt/nas_home/aja63/projects/fs-xlt/few-shot;
+CONDA_ENV=fs-xlt;
+#CONDA_REPLACE=fsxlt;
+
+#ADAPTATION_METHOD () =
+#    sft #|
+#    #adapters
+#;
+
+BASE_MODEL?, BASE_MODEL_SHORT () =
+    facebook/nllb-200-3.3B, nllb3.3B
+    #facebook/nllb-200-1.3B, nllb1.3B
+    #facebook/nllb-200-distilled-600M, nllb600M
+;
+
+SOURCE_LANG? = ind_Latn;
+SOURCE_COLUMN_NAME? = indonesian;
+
+TARGET_LANG_DISPLAY (), TARGET_LANG?, TARGET_COLUMN_NAME? =
+    bbc, bbc_Latn, toba_batak |
+    mad, mad_Latn, madurese |
+    nij, nij_Latn, ngaju
+;
+
+# Task fine-tuning attributes
+SFT_PARAMS_PROPORTION? =
+    0.08
+;
+FULL_FT_EPOCHS (epochs), SPARSE_FT_EPOCHS () =
+    5, 5
+;

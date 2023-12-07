@@ -1,0 +1,50 @@
+{
+    "id": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/validation.tsv"
+        }
+    },
+    "ace": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-ace/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-ace/validation.tsv"
+        }
+    },
+    "ban": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-ban/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-ban/validation.tsv"
+        }
+    },
+    "bjn": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-bjn/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-bjn/validation.tsv"
+        }
+    },
+    "bug": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-bug/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-bug/validation.tsv"
+        }
+    },
+    "jav": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-jav/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-jav/validation.tsv"
+        }
+    },
+    "min": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-min/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-min/validation.tsv"
+        }
+    },
+    "sun": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-sun/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-sun/validation.tsv"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+NAME=/mnt/nas_home/fs-xlt/experiments/translate-smsa;
+SCRIPT=translate_smsa.sh;
+SRC_DIR=/mnt/nas_home/aja63/projects/fs-xlt/few-shot;
+CONDA_ENV=fs-xlt;
+CONDA_REPLACE=fsxlt;
+
+SOURCE_LANG? = ind;
+SOURCE_SCRIPT? = Latn;
+
+TRANSLATION_ROOT? = /mnt/nas_home/fs-xlt/experiments/nllb_adapt_embinit/nllb3.3B_epochs-5_5;
+
+TRANSLATION_MODEL (), TARGET_LANG (), TARGET_SCRIPT?, LANGUAGE_ADAPTER? =
+    #ace, Latn, no |
+    #ban, Latn, no |
+    /mnt/nas_home/fs-xlt/experiments/nllb_adapt_embinit/nllb3.3B_bbc_epochs-5_5 (nllb3.3Bembinit), bbc, Latn, yes |
+    #bjn, Latn, no |
+    #bug, Latn, no |
+    /mnt/nas_home/fs-xlt/experiments/nllb_adapt_embinit/nllb3.3B_mad_epochs-5_5 (nllb3.3Bembinit), mad, Latn, yes |
+    #min, Latn, no |
+    /mnt/nas_home/fs-xlt/experiments/nllb_adapt_embinit/nllb3.3B_nij_epochs-5_5 (nllb3.3Bembinit), nij, Latn, yes
+    #jav, Latn, no |
+    #sun, Latn, no
+;
+
+SPLIT () =
+    train |
+    validation |
+    test
+;

@@ -1,0 +1,32 @@
+NAME=/mnt/nas_home/fs-xlt/experiments/nllb_adapt_full;
+SCRIPT=nllb_adapt.sh;
+SRC_DIR=/mnt/nas_home/aja63/projects/fs-xlt/few-shot;
+CONDA_ENV=fs-xlt;
+CONDA_REPLACE=fsxlt;
+
+#ADAPTATION_METHOD () =
+#    sft #|
+#    #adapters
+#;
+DATA_ROOT? = /mnt/nas_home/fs-xlt/datasets/BPCC/wiki;
+
+BASE_MODEL?, BASE_MODEL_SHORT () =
+    #facebook/nllb-200-distilled-600M, nllb600M
+    facebook/nllb-200-3.3B, nllb3.3B
+;
+
+SOURCE_LANG? = eng_Latn;
+LANG1? = eng_Latn;
+SOURCE_COLUMN_NAME? = eng_Latn;
+
+TARGET_LANG_DISPLAY (), TARGET_LANG?, TARGET_COLUMN_NAME?, LANG2? =
+    mai, mai_Deva, mai_Deva, mai_Deva;
+    #gom, gom_Deva, gom_Deva, gom_Deva;
+
+# Task fine-tuning attributes
+SFT_PARAMS_PROPORTION? =
+    0.08
+;
+FULL_FT_EPOCHS (epochs), SPARSE_FT_EPOCHS () =
+    5, 5
+;

@@ -1,0 +1,24 @@
+NAME=/mnt/nas_home/fs-xlt/experiments/translate-smsa-adapted;
+SCRIPT=translate_smsa_adapted.sh;
+SRC_DIR=/mnt/nas_home/aja63/projects/fs-xlt/few-shot;
+CONDA_ENV=fs-xlt;
+CONDA_REPLACE=fsxlt;
+
+SOURCE_LANG? = ind;
+SOURCE_SCRIPT? = Latn;
+
+BASE_MODEL () = 
+    facebook/nllb-200-1.3B (nllb1.3B)
+;
+
+TARGET_LANG (), TARGET_SCRIPT?, LANGUAGE_ADAPTER? =
+    bbc, Latn, yes |
+    mad, Latn, yes |
+    nij, Latn, yes
+;
+
+SPLIT () =
+    train |
+    validation |
+    test
+;

@@ -1,0 +1,50 @@
+{
+    "id": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/validation.tsv"
+        }
+    },
+    "ace_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-ace/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-ace/validation.json"
+        }
+    },
+    "ban_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-ban/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-ban/validation.json"
+        }
+    },
+    "bjn_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-bjn/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-bjn/validation.json"
+        }
+    },
+    "bug_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-bug/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-bug/validation.json"
+        }
+    },
+    "jav_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-jav/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-jav/validation.json"
+        }
+    },
+    "min_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-min/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-min/validation.json"
+        }
+    },
+    "sun_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-sun/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/nllb600M_d/translated-sun/validation.json"
+        }
+    }
+}

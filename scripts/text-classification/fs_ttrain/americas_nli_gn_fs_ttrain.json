@@ -1,0 +1,19 @@
+{
+    "en": {
+        "data": {
+            "name": "multi_nli.py"
+        }
+    },
+    "gn_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/multi_nli/translated-gn/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/multi_nli/translated-gn/validation.json"
+        }
+    },
+    "gn": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/gn.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/gn.tsv"
+        }
+    }
+}

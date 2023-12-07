@@ -1,0 +1,40 @@
+{
+    "en": {
+        "data": {
+            "name": "multi_nli.py"
+        }
+    },
+    "aym_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/multi_nli/nllb3_3B/translated-aym/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/multi_nli/nllb3_3B/translated-aym/validation.json"
+        }
+    },
+    "aym": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/aym.tsv"
+        }
+    },
+    "gn_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/multi_nli/nllb3_3B/translated-gn/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/multi_nli/nllb3_3B/translated-gn/validation.json"
+        }
+    },
+    "gn": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/gn.tsv"
+        }
+    },
+    "quy_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/multi_nli/nllb3_3B/translated-quy/train.json",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/multi_nli/nllb3_3B/translated-quy/validation.json"
+        }
+    },
+    "quy": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/quy.tsv"
+        }
+    }
+}

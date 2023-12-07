@@ -1,0 +1,49 @@
+NAME=/mnt/nas_home/fs-xlt/experiments/nli;
+SCRIPT=americas_nli_batch.sh;
+#SRC_DIR=/mnt/nas_home/aja63/projects/fs-xlt/few-shot;
+#CONDA_ENV=fs-xlt-adapt;
+#CONDA_REPLACE=fsxlt;
+
+ADAPTATION_METHOD () =
+    sft #|
+    #adapters
+;
+
+BASE_MODEL?, BASE_MODEL_SHORT (), BASE_MODEL_SFT_IDENTIFIER? =
+    xlm-roberta-base, xlmrbase, xlmr
+;
+
+SOURCE_LANG () = en;
+
+TARGET_LANG () =
+    aym |
+    bzd |
+    cni |
+    gn |
+    hch |
+    nah |
+    oto |
+    quy |
+    shp |
+    tar
+;
+
+SOURCE_ADAPTATION (sa), TARGET_ADAPTATION (ta), NUM_SOURCE_SHOTS (ss), NUM_TARGET_SHOTS (ts) =
+    no, no, -1 (all), 100 |
+    yes, yes, -1 (all), 100
+;
+
+TARGET_UPSAMPLING (upsampling) = 10;
+
+# Task fine-tuning attributes
+SFT_PARAMS_NUM? =
+    14155776
+;
+FULL_FT_EPOCHS (epochs), SPARSE_FT_EPOCHS () =
+    5, 5
+;
+# MAX_SEQ_LENGTH? = 256;
+BATCH_SIZE? = 16;
+GRADIENT_ACCUMULATION_STEPS? = 2;
+LEARNING_RATE? = 2e-5;
+EVAL_STEPS? = 625;

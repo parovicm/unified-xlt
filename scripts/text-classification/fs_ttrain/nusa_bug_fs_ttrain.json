@@ -1,0 +1,20 @@
+{
+    "id": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/validation.tsv"
+        }
+    },
+    "bug_translated": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-bug/train.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/smsa-trimmed/translated-bug/validation.tsv"
+        }
+    },
+    "bug": {
+        "data": {
+            "name": "indonlp/NusaX-senti",
+            "config_name": "bug"
+        }
+    }
+}

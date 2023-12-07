@@ -1,0 +1,50 @@
+NAME=/mnt/nas_home/fs-xlt/experiments/sa_fs_ttrain;
+SCRIPT=nusax_senti_fs_ttrain.sh;
+SRC_DIR?=/mnt/nas_home/mp939/projects/few-shot;
+#CONDA_ENV=few-shot;
+#CONDA_REPLACE=few-shot;
+
+ADAPTATION_METHOD () =
+    #sft #|
+    adapters
+;
+
+BASE_MODEL?, BASE_MODEL_SHORT (), BASE_MODEL_SFT_IDENTIFIER? =
+    xlm-roberta-base, xlmrbase, xlmr
+;
+
+SOURCE_LANG () = id;
+
+TARGET_LANG () =
+    ace |
+    ban |
+    #bbc |
+    bjn |
+    bug |
+    #mad |
+    min |
+    jav |
+    sun
+;
+
+LANGUAGE_ADAPTATION (la) =
+    no |
+    yes
+;
+
+NUM_SOURCE_SHOTS (ss) = -1 (all);
+NUM_TARGET_SHOTS (ts) = 100;
+TARGET_UPSAMPLING (upsampling) = 10;
+
+# Task fine-tuning attributes
+SFT_PARAMS_NUM? =
+    14155776
+;
+FULL_FT_EPOCHS (epochs), SPARSE_FT_EPOCHS () =
+    10, 10
+;
+# MAX_SEQ_LENGTH? = 256;
+BATCH_SIZE? = 16;
+GRADIENT_ACCUMULATION_STEPS? = 1;
+LEARNING_RATE? = 2e-5;
+EVAL_STEPS? = 250;

@@ -1,0 +1,67 @@
+{
+    "en": {
+        "data": {
+            "name": "multi_nli.py"
+        }
+    },
+    "aym": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/aym.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/aym.tsv"
+        }
+    },
+    "bzd": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/bzd.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/bzd.tsv"
+        }
+    },
+    "cni": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/cni.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/cni.tsv"
+        }
+    },
+    "gn": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/gn.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/gn.tsv"
+        }
+    },
+    "hch": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/hch.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/hch.tsv"
+        }
+    },
+    "nah": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/nah.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/nah.tsv"
+        }
+    },
+    "oto": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/oto.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/oto.tsv"
+        }
+    },
+    "quy": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/quy.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/quy.tsv"
+        }
+    },
+    "shp": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/shp.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/shp.tsv"
+        }
+    },
+    "tar": {
+        "data": {
+            "train_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/dev/tar.tsv",
+            "validation_file": "/mnt/nas_home/fs-xlt/datasets/AmericasNLI/test/tar.tsv"
+        }
+    }
+}
